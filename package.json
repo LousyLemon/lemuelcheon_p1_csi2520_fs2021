@@ -1,0 +1,32 @@
+{
+  "name": "lemuelcheon_teslatracker_csi2520",
+  "version": "1.0.0",
+  "description": "The teslatracker app displays the price of TSLA",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LousyLemon/lemuelcheon_p1_csi2520_fs2021.git"
+  },
+  "keywords": [
+    "express",
+    "nodemon"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LousyLemon/lemuelcheon_p1_csi2520_fs2021/issues"
+  },
+  "homepage": "https://github.com/LousyLemon/lemuelcheon_p1_csi2520_fs2021#readme"
+}
