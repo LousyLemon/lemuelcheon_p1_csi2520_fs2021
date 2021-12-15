@@ -93,15 +93,6 @@ db.connect((err) => {
     console.log(`Successful connected to the DB....`);
   }
 });
-/*
-app.get("/", (req, res) => {
-  let sql = `SELECT * FROM tsla_daily`;
-  db.query(sql, (err, result) => {
-    if (err) {
-      throw err;
-    }
-    res.render("index", { data: result });
-  });
-});
-*/
+
+
 app.listen(PORT, () => console.log('Server listening on port ' + PORT));
