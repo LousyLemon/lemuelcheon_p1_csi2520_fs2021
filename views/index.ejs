@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phase 1</title>
-    <link rel="stylesheet" href="css/stylesheet_1.css">
-    
+    <title>Tesla Tracker</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/index.js"></script>   <!--Link to alphavantage-->
 
 
 
 </head>
 <body>
+    <script src="/node_modules/alphavantage/dist/bundle.js"></script>
+    <script type="application/javascript">
+    /**
+     * Init Alpha Vantage with your API key.
+     *
+     * @param {String} key
+     *   Your Alpha Vantage API key.
+     */
+    const alpha = alphavantage({ key: '2R4U55YO6G05KX6E' });
+    </script>
+
+    
     <header id="page_header">
         <nav>
             <a href="https://www.nasdaq.com/">NASDAQ</a>
-            <a href="https://bitcoin.org/en/">BITCOIN</a>
-            <a href="html/notificationpage.html">ALERTS</a>
+            <a href="/views/about.ejs">BITCOIN</a>
+            <a href="/views/notifications.ejs">ALERTS</a>
         </nav>
         <h1>Tesla Price Tracker</h1>
     </header>
@@ -24,9 +36,8 @@
     <main>
         <h2>Chart goes here</h2><br>
   
-
         <!--Centering CSS referenced from w3schools howto center an img-->
-        <img src="img/TSLAchart.png" alt="Tesla YTD chart" class="center">
+        <img src="/public/img/TSLAchart.png" alt="Tesla YTD chart" class="center">
 
        <!-- <iframe src="https://www.nasdaq.com/market-activity/stocks/tsla" title="TSLA"></iframe> -->
     </main>
